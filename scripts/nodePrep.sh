@@ -55,5 +55,7 @@ fi
 systemctl enable docker
 systemctl start docker
 
+echo "nameserver 168.63.129.16" >> /etc/resolv.conf
+
 echo $(date) " - Script Complete"
 
